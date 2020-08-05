@@ -1,0 +1,86 @@
+{
+	"variables": [],
+	"info": {
+		"name": "setu",
+		"_postman_id": "cbf48ca5-a1e9-60f1-6182-9f022bd9e467",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/testone/webresources/api/v1/fetch-bill",
+			"request": {
+				"url": "http://localhost:8080/testone/webresources/api/v1/fetch-bill",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "AWS4-HMAC-SHA256 Credential=/20200805/us-east-1/execute-api/aws4_request, SignedHeaders=accept;content-length;content-type;host;x-amz-date, Signature=b74a678f63f7fb6c376360ae1cabc9d80c943a7fbcfdbffdfdf7aaa39481d91b",
+						"description": ""
+					},
+					{
+						"key": "Host",
+						"value": "localhost:8080",
+						"description": ""
+					},
+					{
+						"key": "Content-Length",
+						"value": 33,
+						"description": ""
+					},
+					{
+						"key": "X-Amz-Date",
+						"value": "20200805T205710Z",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"mobileNumber\":\"9071077713\"\n}\t"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/testone/webresources/api/v1/payment-update",
+			"request": {
+				"url": "http://localhost:8080/testone/webresources/api/v1/payment-update",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic d2VibG9naWM6d2VibG9naWMxMjM=",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ref_id\": \"X1234\",\r\n    \"txns\": {\r\n        \"amt_paid\": \"2000\",\r\n        \"payment_date\": \"2020-06-05\",\r\n        \"Payment_id\": \"OUAB012344\"\r\n    }\r\n    \r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

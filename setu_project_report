@@ -1,0 +1,21 @@
+Sample Data
+9071077713	Ankesh	2000	05-AUG-20	X1234	200	2020-06-05	OUAB012344	PMT7017794
+9171077713	Ankesh	100	06-AUG-20	ZDCRE				
+9271077713	Ankesh	4000	06-AUG-20	X1236				
+9371077713	Prabhat	5000	06-AUG-20	X1237				
+9371077713	Ram	50000	06-AUG-20	X1238				
+9371077723	Ganesha	50000	06-AUG-20	X1239				
+9371077724	gdysdyg	5020	06-AUG-20	X9384939				
+
+URL
+http://192.168.2.8:8080/testone/webresources/api/v1/fetch-bill - billing
+http://192.168.2.8:8080/testone/webresources/api/v1/payment-update - payment-update
+
+Api key has not been configured.
+
+github link
+https://github.com/ankesh83/Setutest
+
+PFA postman collection.
+
+confirm timing of testing so that i can disable firewall.
